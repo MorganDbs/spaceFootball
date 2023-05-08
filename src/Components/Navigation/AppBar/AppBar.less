@@ -1,0 +1,35 @@
+@import "../../../style/variables.less";
+
+.app-bar {
+    height: @appBarHeight;
+
+    &.app-bar-drawer-close,
+    &.app-bar-drawer-open {
+        transition: @drawerTransition;
+    }
+
+    &.app-bar-drawer-open {
+        width: calc(100% - @drawerWidth);
+        margin-left: @drawerWidth;
+    }
+
+    &.app-bar-drawer-close {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .app-bar-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .app-bar-title {
+            display: flex;
+            align-items: center;
+
+            .burger-button {
+                color: #fff;
+            }
+        }
+    }
+}

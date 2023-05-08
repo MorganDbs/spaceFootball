@@ -1,0 +1,30 @@
+.data-grid-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .data-grid-cell-fixed {
+        width: 50px;
+    }
+
+    .data-grid-body {
+        overflow: auto;
+    }
+
+    .data-grid-header {
+        .data-grid-header-cell {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+
+            .data-grid-header-cell-arrow {
+                width: 20px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+        }
+    }
+}
