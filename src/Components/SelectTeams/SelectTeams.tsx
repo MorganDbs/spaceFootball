@@ -4,6 +4,7 @@ import { SelectChangeEvent } from '@suid/material/Select';
 import { orderBy as orderByLodash } from 'lodash';
 import { Accessor } from 'solid-js';
 import teamsManagerSingleton from '../../store/TeamsManager';
+import './SelectTeams.less';
 
 interface ISelectTeams {
     value: Accessor<string[]>;
